@@ -96,8 +96,9 @@ Cada tarea tiene la siguiente estructura:
 ```
 
 ## Capturas de Pantalla
+![gest](https://github.com/user-attachments/assets/3ebd7886-8178-4923-9588-be9771416f11)
 
-[Aquí puedes incluir capturas de pantalla de tu aplicación]
+
 
 ## Posibles Mejoras
 
@@ -114,7 +115,8 @@ Cada tarea tiene la siguiente estructura:
 
 ## Autor
 
-[Tu nombre o nombre de usuario]
+GitHub : jonathanjd7
+IG: jonathanjd7
 
 ---
 
