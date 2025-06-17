@@ -1,0 +1,136 @@
+:root {
+  --bg-light: #f9f9f9;
+  --bg-dark: #1e1e1e;
+  --text-light: #1e1e1e;
+  --text-dark: #f9f9f9;
+  --primary-color: #4f46e5;
+  --priority-baja: #10b981;
+  --priority-media: #f59e0b;
+  --priority-alta: #ef4444;
+}
+
+body {
+  background-color: var(--bg-light);
+  color: var(--text-light);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 2rem;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+h1 {
+  margin-bottom: 1rem;
+  color: var(--primary-color);
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+input[type="text"],
+select,
+button {
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+}
+
+button {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #4338ca;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  background-color: #fff;
+  border: 1px solid #e5e7eb;
+  border-left: 6px solid transparent;
+  border-radius: 5px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  transition: transform 0.2s;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+li[data-priority="baja"] {
+  border-left-color: var(--priority-baja);
+}
+
+li[data-priority="media"] {
+  border-left-color: var(--priority-media);
+}
+
+li[data-priority="alta"] {
+  border-left-color: var(--priority-alta);
+}
+
+li:hover {
+  transform: scale(1.01);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.task-content {
+  flex-grow: 1;
+}
+
+.task-buttons {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.edit-btn, .delete-btn {
+  padding: 0.3rem 0.6rem;
+  font-size: 0.8rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.edit-btn {
+  background-color: #3b82f6;
+  color: white;
+  border: none;
+}
+
+.edit-btn:hover {
+  background-color: #2563eb;
+}
+
+.delete-btn {
+  background-color: #ef4444;
+  color: white;
+  border: none;
+}
+
+.delete-btn:hover {
+  background-color: #dc2626;
+}
+
+/* Modo oscuro opcional */
+body.dark {
+  background-color: var(--bg-dark);
+  color: var(--text-dark);
+}
+
+body.dark li {
+  background-color: #2d2d2d;
+  border-color: #3f3f3f;
+}
